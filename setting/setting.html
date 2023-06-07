@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="setting.css" />
+    <title> MI-ClipBoard </title>
+  </head>
+
+  <body>
+    <section class="settingSection">
+      <img alt="setting-logo" src="../assets/Icons/settings_logo.png" class="logoImageMi" />
+      <h1 class="headMi"> MIClipboard Settings </h1>
+
+      <div class="settingDiv">
+        <div class="checkbox-container">
+          <input
+            type="checkbox"
+            id="checkboxClass"
+            value="topClass"
+            class="badgeCheckbox"
+          />
+          <label for="checkboxClass"> Show number of clipboard items on the extension icon </label>
+        </div>
+
+        <div class="radioButton-container">
+          <h3> When should we save copied text to MIClipboard? </h3>
+          <div class="radioWrapperMain">
+            <div class="radioWrapperCopy">
+              <input
+                type="radio"
+                id="ctrl+cClass"
+                name="saveCopied"
+                value="ctrl+cClass"
+                class="radio_SaveTextClass"
+              />
+              <label for="ctrl+cClass"> On key CTRL + C (For MAC ⌘ + C)</label>
+            </div>
+            <div class="radioWrapperCopy">
+              <input
+                type="radio"
+                id="tooltipClass"
+                name="saveCopied"
+                value="tooltipClass"
+                class="radio_SaveTextClass"
+              />
+              <label for="tooltipClass"> Display tooltip asking to copy </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="radioButton-container">
+          <h3> Please select tooltip position. </h3>
+          <div class="radioWrapperMain">
+            <div class="radioWrapperMi">
+              <input
+                type="radio"
+                id="topClass"
+                name="PositionClass"
+                value="topClass"
+                class="radio_PositionClass"
+              />
+              <label for="topClass"> Top </label>
+            </div>
+            <div class="radioWrapperMi">
+              <input
+                type="radio"
+                id="bottomClass"
+                name="PositionClass"
+                value="bottomClass"
+                class="radio_PositionClass"
+              />
+              <label for="bottomClass"> Bottom </label>
+            </div>
+            <div class="radioWrapperMi">
+              <input
+                type="radio"
+                id="rightClass"
+                name="PositionClass"
+                value="rightClass"
+                class="radio_PositionClass"
+              />
+              <label for="rightClass"> Right </label>
+            </div>
+            <div class="radioWrapperMi">
+              <input
+                type="radio"
+                id="leftClass"
+                name="PositionClass"
+                value="leftClass"
+                class="radio_PositionClass"
+              />
+              <label for="leftClass"> Left </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="button"
+            value="Save & Close"
+            class="buttonClass"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="../contentScript.js"></script>
+  </body>
+</html>

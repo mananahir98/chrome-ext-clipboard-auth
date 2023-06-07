@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/* tooltip */
+.mi-tooltip {
+  width: auto;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 9999999999999;
+  opacity: 0;
+  font-family: "Open Sans", sans-serif !important;
+  line-height: 1.4;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mi-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.mi-tooltip.show {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* selection of text */
+/* Code for Firefox */
+::-moz-selection {
+  color: #fff;
+  background: #f96b8f;
+}
+
+::selection {
+  color: #fff;
+  background: #f96b8f;
+}

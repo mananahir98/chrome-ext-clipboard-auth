@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.settingSection {
+  padding: 30px 0;
+}
+
+.logoImageMi {
+  display: flex;
+  margin: 0 auto;
+}
+
+.headMi {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.settingDiv {
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 50px 10px 50px 50px;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .settingDiv {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .settingDiv {
+    padding: 50px 20px;
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: var(--white) !important;
+  margin: 0 10px 0 0;
+}
+
+/* handling check box chceked property */
+input[type=checkbox]:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 18px;
+  width: 18px;
+  left: 0;
+  top: 5px;
+  background-color: #6EC005;
+  font-family: "Montserrat";
+  border-radius: 2px;
+  border: 1px solid var(--white);
+}
+
+@media only screen and (max-width: 1447px) and (min-width: 1024px) {
+  input[type=checkbox]:checked::before {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  input[type=checkbox]:checked::before {
+    top: 5px;
+  }
+}
+
+@media only screen and (max-width: 697px) {
+  input[type=checkbox]:checked::before {
+    top: 0;
+  }
+}
+
+input[type=checkbox]:checked::after {
+  content: url("../assets/Icons/check.png");
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: 2.5px;
+}
+
+@media only screen and (max-width: 1447px) and (min-width: 1025px) {
+  input[type=checkbox]:checked::after {
+    top: -2.5px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  input[type=checkbox]:checked::after {
+    top: 2.5px;
+  }
+}
+
+@media only screen and (max-width: 697px) {
+  input[type=checkbox]:checked::after {
+    top: -2.5px;
+    left: -3px;
+  }
+}
+/* handling check box chceked property */
+
+.checkbox-container label {
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+@media only screen and (max-width: 698px) {
+  .checkbox-container label {
+    margin: 10px 0 0 0;
+  }
+}
+
+.radioButton-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 36px;
+}
+
+.radioButton-container h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.radioWrapperMain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.radioWrapperMi, .radioWrapperCopy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 14px 14px 0 0;
+  padding: 13px 15px;
+  min-width: 100px;
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  .radioWrapperCopy {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.radio_SaveTextClass, .radio_PositionClass {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: green !important;
+  margin: 0 10px 0 0;
+}
+
+/* handling radio button chceked property */
+.radio_SaveTextClass:checked::before, .radio_PositionClass:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 3px;
+  background-color: #6EC005;
+  font-family: "Montserrat";
+  border-radius: 2px;
+  border: 1px solid var(--white);
+}
+
+.radio_SaveTextClass:checked::after , .radio_PositionClass:checked::after {
+  content: url("../assets/Icons/circle.png");
+  display: block;
+  position: absolute;
+  left: 13px;
+  top: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+  .radio_SaveTextClass:checked::after {
+    top: 11px;
+  }
+}
+/* handling radio button chceked property */
+
+.radioWrapperMi label, .radioWrapperCopy label {
+  font-size: 16px;
+  font-family: Poppins;
+}
+
+.buttonClass {
+  cursor: pointer;
+  margin-top: 36px;
+  background-color: #101828;
+  color: #fff;
+  padding: 11px 21px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-family: Poppins;
+}

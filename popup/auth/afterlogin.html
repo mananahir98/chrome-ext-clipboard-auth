@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PopUp</title>
+    <link rel="stylesheet" href="./afterlogin.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="main-container">
+        <div class="confirmation-Popup-div" style="display: none">
+          <div class="confirmationPopup">
+            <div>
+              <h3>Delete all Notes?</h3>
+            </div>
+            <p>
+              Are you sure you want to delete all your notes? This action is
+              irreversible.
+            </p>
+            <div class="confirmPopupDiv">
+              <button id="confirmNo" class="cnfrmBtn">Cancel</button>
+              <button id="confirmYes" class="cnfrmBtn">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome-popup-div" style="display: none">
+          <div class="welcomePopup">
+            <div class="close-popup">
+              <img src="../../assets/Icons/x-mark.png" alt="X" />
+            </div>
+            <div>
+              <h3>Welcome to MIClipboard</h3>
+            </div>
+            <img
+              src="../../assets/Icons/settings_logo.png"
+              alt="welcome-logo"
+              class="logoImageMi"
+            />
+            <p>
+              Thank you for installing MIClipboard. The extension tracks your
+              clipboard and stores every text you copied.
+            </p>
+          </div>
+        </div>
+
+        <div class="header">
+          <div class="logoHeader">
+            <img
+              src="../../assets/Icons/logo.png"
+              alt="mi-clipboard"
+              class="logo"
+            />
+            <p class="heading">MIClipboard</p>
+          </div>
+
+          <div class="button-wrapper">
+            <label class="switch">
+              <input type="checkbox" id="MiSwitch" />
+              <span class="slider round"></span>
+            </label>
+
+            <a
+              href="../../setting/setting.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                class="bottomTooltip-before bottomTooltip-after settingButton"
+                data-tooltip="Settings"
+              >
+                <img
+                  src="../../assets/Icons/setting.png"
+                  alt="setting"
+                  width="18"
+                  height="18"
+                />
+              </button>
+            </a>
+          </div>
+          <div>
+            <div class="sign-out-btn" id="sign-out">Sign Out</div>
+          </div>
+        </div>
+
+        <div class="body-wrapper">
+          <div class="subHeader">
+            <div>
+              <button class="All-button active" id="dataButton" value="All">
+                All
+              </button>
+
+              <button class="Fav-button" id="dataButton" value="Fav">
+                Fav
+              </button>
+            </div>
+
+            <div class="search-remove-all-div">
+              <div class="search-wrapper">
+                <img
+                  src="../../assets/Icons/search.png"
+                  alt="search"
+                  class="fa-search"
+                  width="18"
+                  height="18"
+                />
+                <input
+                  class="search-input"
+                  type="search"
+                  id="searchValue"
+                  placeholder="Search..."
+                  value=""
+                />
+                <img
+                  src="../../assets/Icons/close.png"
+                  alt="X"
+                  class="close-search"
+                />
+              </div>
+
+              <button
+                class="eraser-button bottomTooltip-before bottomTooltip-after"
+                data-tooltip="Remove all"
+              >
+                <img
+                  src="../../assets/Icons/trash.png"
+                  alt="Remove"
+                  width="18"
+                  height="18"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="total-url-div">
+            <div class="totalDiv">
+              <div class="checkbox-container">
+                <label>
+                  <input
+                    type="checkbox"
+                    id="allSelect"
+                    value="totalClass"
+                    class="totalCheckbox"
+                  />
+                </label>
+                <div id="totalDiv"></div>
+              </div>
+            </div>
+
+            <div class="help-buttons-wrapper">
+              <button class="button-url" id="button-url">
+                <img
+                  src="../../assets/Icons/earth.png"
+                  alt=""
+                  width="18"
+                  height="18"
+                />
+                <h6>Save URL</h6>
+              </button>
+            </div>
+          </div>
+
+          <div id="main-note-wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./afterlogin.js"></script>
+  </body>
+</html>
